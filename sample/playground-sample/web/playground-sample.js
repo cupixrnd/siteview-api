@@ -21,7 +21,7 @@ async function initCupix() {
     else apiLoaded = true;
     retryCount++;
   } while (!apiLoaded && retryCount < 5);
-  await siteView4embed.signout();
+  // await siteView4embed.signout();
   signinWithToken();
 }
 
