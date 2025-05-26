@@ -566,6 +566,7 @@ function ready() {
 window.addEventListener("message", /** @param {MessageEvent<CupixMessageResponse>} e */
 function (e) {
   var _response$request;
+  if (e.source !== siteView4embed.cupixWindow) return;
   var response = e && e.data;
   if (response == undefined) return;
   if (response.header != "CUPIXWORKS_API") return;
